@@ -1,13 +1,14 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6211" systemVersion="14A298i" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10116" systemVersion="15E65" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6204"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
     </dependencies>
     <scenes>
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="ViewController" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
                         <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
@@ -15,8 +16,39 @@
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7MT-Kk-lf3">
+                                <rect key="frame" x="241" y="502" width="118" height="30"/>
+                                <state key="normal" title="Button block test"/>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="e5V-F7-FxW">
+                                <rect key="frame" x="263" y="557" width="74" height="30"/>
+                                <state key="normal" title="PoperView"/>
+                                <connections>
+                                    <action selector="showPoperViewController:" destination="BYZ-38-t0r" eventType="touchUpInside" id="EiF-p0-DDw"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="88j-Gw-36w">
+                                <rect key="frame" x="235" y="447" width="130" height="30"/>
+                                <state key="normal" title="Show Image Picker"/>
+                                <connections>
+                                    <action selector="showImagePickerController:" destination="BYZ-38-t0r" eventType="touchUpInside" id="ZZA-AC-1HF"/>
+                                </connections>
+                            </button>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="88j-Gw-36w" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="0Zj-L8-mwf"/>
+                            <constraint firstItem="e5V-F7-FxW" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="3R0-OU-O0g"/>
+                            <constraint firstItem="7MT-Kk-lf3" firstAttribute="top" secondItem="88j-Gw-36w" secondAttribute="bottom" constant="25" id="Cug-nk-yLW"/>
+                            <constraint firstItem="7MT-Kk-lf3" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="GON-1Q-Drf"/>
+                            <constraint firstItem="e5V-F7-FxW" firstAttribute="top" secondItem="7MT-Kk-lf3" secondAttribute="bottom" constant="25" id="IqY-yK-dnJ"/>
+                            <constraint firstItem="88j-Gw-36w" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" constant="162" id="cdz-eo-7l0"/>
+                        </constraints>
                     </view>
+                    <connections>
+                        <outlet property="button" destination="7MT-Kk-lf3" id="HB5-fq-eGk"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>

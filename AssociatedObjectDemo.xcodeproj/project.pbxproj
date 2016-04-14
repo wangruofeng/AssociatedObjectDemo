@@ -13,6 +13,10 @@
 		0E000D0E1CBF3BE4006B0342 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0E000D0C1CBF3BE4006B0342 /* Main.storyboard */; };
 		0E000D101CBF3BE4006B0342 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0E000D0F1CBF3BE4006B0342 /* Assets.xcassets */; };
 		0E000D131CBF3BE4006B0342 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0E000D111CBF3BE4006B0342 /* LaunchScreen.storyboard */; };
+		0E000D1C1CBF3C13006B0342 /* NSObject+AssociatedObject.m in Sources */ = {isa = PBXBuildFile; fileRef = 0E000D1B1CBF3C13006B0342 /* NSObject+AssociatedObject.m */; };
+		0E000D211CBF4385006B0342 /* UIImagePickerController+RFBlocks.m in Sources */ = {isa = PBXBuildFile; fileRef = 0E000D201CBF4385006B0342 /* UIImagePickerController+RFBlocks.m */; };
+		0E000D241CBF4B50006B0342 /* UIButton+RFBlcoks.m in Sources */ = {isa = PBXBuildFile; fileRef = 0E000D231CBF4B50006B0342 /* UIButton+RFBlcoks.m */; };
+		0E000D271CBF5014006B0342 /* UIViewController+RFPresentPopover.m in Sources */ = {isa = PBXBuildFile; fileRef = 0E000D261CBF5014006B0342 /* UIViewController+RFPresentPopover.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +30,14 @@
 		0E000D0F1CBF3BE4006B0342 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		0E000D121CBF3BE4006B0342 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		0E000D141CBF3BE4006B0342 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		0E000D1A1CBF3C13006B0342 /* NSObject+AssociatedObject.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSObject+AssociatedObject.h"; sourceTree = "<group>"; };
+		0E000D1B1CBF3C13006B0342 /* NSObject+AssociatedObject.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSObject+AssociatedObject.m"; sourceTree = "<group>"; };
+		0E000D1F1CBF4385006B0342 /* UIImagePickerController+RFBlocks.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImagePickerController+RFBlocks.h"; sourceTree = "<group>"; };
+		0E000D201CBF4385006B0342 /* UIImagePickerController+RFBlocks.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImagePickerController+RFBlocks.m"; sourceTree = "<group>"; };
+		0E000D221CBF4B50006B0342 /* UIButton+RFBlcoks.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIButton+RFBlcoks.h"; sourceTree = "<group>"; };
+		0E000D231CBF4B50006B0342 /* UIButton+RFBlcoks.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIButton+RFBlcoks.m"; sourceTree = "<group>"; };
+		0E000D251CBF5014006B0342 /* UIViewController+RFPresentPopover.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIViewController+RFPresentPopover.h"; sourceTree = "<group>"; };
+		0E000D261CBF5014006B0342 /* UIViewController+RFPresentPopover.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIViewController+RFPresentPopover.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -62,6 +74,14 @@
 				0E000D071CBF3BE4006B0342 /* AppDelegate.m */,
 				0E000D091CBF3BE4006B0342 /* ViewController.h */,
 				0E000D0A1CBF3BE4006B0342 /* ViewController.m */,
+				0E000D1A1CBF3C13006B0342 /* NSObject+AssociatedObject.h */,
+				0E000D1B1CBF3C13006B0342 /* NSObject+AssociatedObject.m */,
+				0E000D1F1CBF4385006B0342 /* UIImagePickerController+RFBlocks.h */,
+				0E000D201CBF4385006B0342 /* UIImagePickerController+RFBlocks.m */,
+				0E000D221CBF4B50006B0342 /* UIButton+RFBlcoks.h */,
+				0E000D231CBF4B50006B0342 /* UIButton+RFBlcoks.m */,
+				0E000D251CBF5014006B0342 /* UIViewController+RFPresentPopover.h */,
+				0E000D261CBF5014006B0342 /* UIViewController+RFPresentPopover.m */,
 				0E000D0C1CBF3BE4006B0342 /* Main.storyboard */,
 				0E000D0F1CBF3BE4006B0342 /* Assets.xcassets */,
 				0E000D111CBF3BE4006B0342 /* LaunchScreen.storyboard */,
@@ -149,9 +169,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0E000D1C1CBF3C13006B0342 /* NSObject+AssociatedObject.m in Sources */,
 				0E000D0B1CBF3BE4006B0342 /* ViewController.m in Sources */,
 				0E000D081CBF3BE4006B0342 /* AppDelegate.m in Sources */,
+				0E000D271CBF5014006B0342 /* UIViewController+RFPresentPopover.m in Sources */,
+				0E000D241CBF4B50006B0342 /* UIButton+RFBlcoks.m in Sources */,
 				0E000D051CBF3BE4006B0342 /* main.m in Sources */,
+				0E000D211CBF4385006B0342 /* UIImagePickerController+RFBlocks.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
